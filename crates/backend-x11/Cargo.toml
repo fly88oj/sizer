@@ -1,0 +1,11 @@
+[package]
+name = "sizer-backend-x11"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+sizer-core = { workspace = true }
+sizer-platform = { workspace = true }
+x11rb = { workspace = true }

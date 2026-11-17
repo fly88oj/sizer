@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.sizer"
+          path="/org/gnome/shell/extensions/sizer/">
+    <key name="toggle-hotkey" type="as">
+      <default>['&lt;Primary&gt;&lt;Super&gt;z']</default>
+      <summary>Menu hotkey</summary>
+      <description>Accelerator that opens the Sizer preset menu at the pointer (Ctrl+Win+Z, as in Sizer for Windows).</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,430 @@
+# Sizer - Fenstergrößen-Dienstprogramm
+# Copyright (C) 2026 Jowency
+# This file is distributed under the MIT license.
+#
+# German translation for Sizer.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Sizer 0.1.0\n"
+"POT-Creation-Date: 2026-11-17 00:00+0000\n"
+"PO-Revision-Date: 2026-11-17 00:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Sizer"
+msgstr "Sizer"
+
+msgid "Choose a window size preset at the pointer"
+msgstr "Fenstergrößen-Voreinstellung am Zeiger auswählen"
+
+msgid "No presets configured"
+msgstr "Keine Voreinstellungen konfiguriert"
+
+msgid "no active window"
+msgstr "kein aktives Fenster"
+
+#, c-format
+msgid "... %d more"
+msgstr "... weitere %d"
+
+msgid "the preset menu has no entries"
+msgstr "das Voreinstellungsmenü hat keine Einträge"
+
+#, c-format
+msgid "cannot open X display: %s"
+msgstr "X-Display kann nicht geöffnet werden: %s"
+
+#, c-format
+msgid "another client holds the pointer (grab status %s after %d attempts); GNOME holds the devices itself, use the shell extension menu there"
+msgstr "ein anderer Client hält den Zeiger (Grab-Status %s nach %d Versuchen); GNOME hält die Geräte selbst, verwenden Sie dort das Shell-Erweiterungsmenü"
+
+#, c-format
+msgid "another client holds the keyboard (grab status %s after %d attempts); GNOME keeps the devices grabbed for the whole session, use the shell extension menu there"
+msgstr "ein anderer Client hält die Tastatur (Grab-Status %s nach %d Versuchen); GNOME hält die Geräte während der gesamten Sitzung gehalten, verwenden Sie dort das Shell-Erweiterungsmenü"
+
+msgid "the menu window was never mapped"
+msgstr "das Menüfenster wurde nie gemappt"
+
+msgid "no controllable windows"
+msgstr "keine steuerbaren Fenster"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "APP"
+msgstr "APP"
+
+msgid "SIZE"
+msgstr "GRÖSSE"
+
+msgid "POSITION"
+msgstr "POSITION"
+
+msgid "TITLE"
+msgstr "TITEL"
+
+msgid "frame"
+msgstr "Rahmen"
+
+msgid "client"
+msgstr "Client"
+
+msgid "extents"
+msgstr "Ausmaße"
+
+msgid "left"
+msgstr "links"
+
+msgid "top"
+msgstr "oben"
+
+msgid "right"
+msgstr "rechts"
+
+msgid "bottom"
+msgstr "unten"
+
+msgid "decorated"
+msgstr "mit Dekoration"
+
+msgid "undecorated"
+msgstr "ohne Dekoration"
+
+msgid "selected"
+msgstr "ausgewählt"
+
+msgid "resize needs exactly one of --size or --percent"
+msgstr "resize benötigt genau eines von --size oder --percent"
+
+msgid "move needs --anchor or --x/--y"
+msgstr "move benötigt --anchor oder --x/--y"
+
+msgid "--anchor and --x/--y are mutually exclusive"
+msgstr "--anchor und --x/--y schließen sich gegenseitig aus"
+
+msgid "--x needs --y as well"
+msgstr "--x benötigt auch --y"
+
+msgid "--y needs --x as well"
+msgstr "--y benötigt auch --x"
+
+#, c-format
+msgid "preset %s already exists in %s; use `sizer preset set` to change it"
+msgstr "Voreinstellung %s existiert bereits in %s; verwenden Sie `sizer preset set`, um sie zu ändern"
+
+msgid "--position is 1-based and must be at least 1"
+msgstr "--position ist 1-basiert und muss mindestens 1 sein"
+
+#, c-format
+msgid "--position %d is out of range: %s holds %d preset(s)"
+msgstr "--position %d ist außerhalb des Bereichs: %s enthält %d Voreinstellung(en)"
+
+msgid "preset label must not be empty"
+msgstr "Voreinstellungslabel darf nicht leer sein"
+
+#, c-format
+msgid "row #%d is a menu separator; %s it makes no sense — remove it instead"
+msgstr "Zeile #%d ist ein Menütrenner; %s ist nicht sinnvoll — entfernen Sie ihn stattdessen"
+
+msgid "added"
+msgstr "hinzugefügt"
+
+msgid "updated"
+msgstr "aktualisiert"
+
+msgid "removed"
+msgstr "entfernt"
+
+msgid "moved"
+msgstr "verschoben"
+
+msgid "copied"
+msgstr "kopiert"
+
+msgid "separator"
+msgstr "Trenner"
+
+#, c-format
+msgid "%s separator in %s"
+msgstr "%s Trenner in %s"
+
+#, c-format
+msgid "%s %s (%s) in %s"
+msgstr "%s %s (%s) in %s"
+
+msgid "IDX | GROUP | LABEL | SIZE | ANCHOR | HOTKEY"
+msgstr "NR | GRUPPE | LABEL | GRÖSSE | ANKER | SCHNELLTASTE"
+
+msgid "<separator>"
+msgstr "<Trenner>"
+
+#, c-format
+msgid "%s copy"
+msgstr "%s Kopie"
+
+#, c-format
+msgid "%s copy %d"
+msgstr "%s Kopie %d"
+
+#, c-format
+msgid "saved %s from window %s as %s in %s"
+msgstr "%s von Fenster %s als %s in %s gespeichert"
+
+msgid "the top level"
+msgstr "die oberste Ebene"
+
+#, c-format
+msgid "group %s"
+msgstr "Gruppe %s"
+
+msgid "daemon writes plain logs, not JSON; drop --json"
+msgstr "daemon schreibt reine Protokolle, kein JSON; entfernen Sie --json"
+
+msgid "no macro given and standard input is empty"
+msgstr "kein Makro angegeben und Standardeingang ist leer"
+
+msgid "cannot locate a configuration file (use --config, XDG_CONFIG_HOME or HOME)"
+msgstr "Konfigurationsdatei kann nicht gefunden werden (verwenden Sie --config, XDG_CONFIG_HOME oder HOME)"
+
+#, c-format
+msgid "%s (missing; built-in presets apply)"
+msgstr "%s (fehlt; eingebaute Voreinstellungen werden verwendet)"
+
+msgid "configuration is invalid"
+msgstr "Konfiguration ist ungültig"
+
+#, c-format
+msgid "%s (invalid: %s; run `sizer config check`)"
+msgstr "%s (ungültig: %s; führen Sie `sizer config check` aus)"
+
+#, c-format
+msgid "%s (%d preset%s)"
+msgstr "%s (%d Voreinstellung%s)"
+
+msgid "hotkey %s registered and delivery verified"
+msgstr "Schnelltaste %s registriert und Lieferung verifiziert"
+
+#, c-format
+msgid "hotkey %s registered but unverified: %s"
+msgstr "Schnelltaste %s registriert aber nicht verifiziert: %s"
+
+#, c-format
+msgid "hotkey %s unavailable: %s"
+msgstr "Schnelltaste %s nicht verfügbar: %s"
+
+#, c-format
+msgid "fired %d time(s) in %ds"
+msgstr "%d Mal(e) in %ds ausgelöst"
+
+msgid "gnome extension not on the session bus (install it, log out and back in, then `gnome-extensions enable sizer@sizerlinux.dev`)"
+msgstr "GNOME-Erweiterung nicht auf dem Sitzungsbus (installieren, abmelden und wieder anmelden, dann `gnome-extensions enable sizer@sizerlinux.dev`)"
+
+#, c-format
+msgid "gnome extension running (%d presets, menu %s)"
+msgstr "GNOME-Erweiterung läuft (%d Voreinstellungen, Menü %s)"
+
+msgid "open"
+msgstr "geöffnet"
+
+msgid "closed"
+msgstr "geschlossen"
+
+msgid "session"
+msgstr "Sitzung"
+
+msgid "config"
+msgstr "Konfig"
+
+msgid "shell"
+msgstr "Shell"
+
+msgid "backend"
+msgstr "Backend"
+
+msgid "caps"
+msgstr "Funktionen"
+
+msgid "monitors"
+msgstr "Monitore"
+
+#, c-format
+msgid "session %s"
+msgstr "Sitzung %s"
+
+#, c-format
+msgid "config %s"
+msgstr "Konfig %s"
+
+#, c-format
+msgid "shell %s"
+msgstr "Shell %s"
+
+#, c-format
+msgid "backend %s (%s)"
+msgstr "Backend %s (%s)"
+
+#, c-format
+msgid "monitors %d"
+msgstr "Monitore %d"
+
+#, c-format
+msgid "  [%d] %s"
+msgstr "  [%d] %s"
+
+#, c-format
+msgid "workarea %dx%d at %d,%d"
+msgstr "Arbeitsbereich %dx%d bei %d,%d"
+
+msgid "active"
+msgstr "aktiv"
+
+msgid "active   none"
+msgstr "aktiv   keiner"
+
+#, c-format
+msgid "active   %s"
+msgstr "aktiv   %s"
+
+#, c-format
+msgid "window %s above = %s"
+msgstr "Fenster %s oben = %s"
+
+#, c-format
+msgid "window %s maximized = %s"
+msgstr "Fenster %s maximiert = %s"
+
+#, c-format
+msgid "no configuration file at %s; using built-in presets"
+msgstr "keine Konfigurationsdatei bei %s; eingebaute Voreinstellungen werden verwendet"
+
+#, c-format
+msgid "watching %s"
+msgstr "Überwache %s"
+
+#, c-format
+msgid "%s disappeared; using built-in presets"
+msgstr "%s ist verschwunden; eingebaute Voreinstellungen werden verwendet"
+
+#, c-format
+msgid "configuration changed; pushing new presets"
+msgstr "Konfiguration geändert; neue Voreinstellungen werden übertragen"
+
+#, c-format
+msgid "%s: %s; keeping the last good presets"
+msgstr "%s: %s; letzten gültigen Voreinstellungen werden behalten"
+
+msgid "shell extension is back"
+msgstr "Shell-Erweiterung ist zurück"
+
+#, c-format
+msgid "pushed %d of %d presets from %s"
+msgstr "%d von %d Voreinstellungen aus %s übertragen"
+
+msgid "built-in presets"
+msgstr "eingebaute Voreinstellungen"
+
+#, c-format
+msgid "the shell extension rejected the preset list (%s); its menu keeps the previous presets"
+msgstr "die Shell-Erweiterung hat die Voreinstellungsliste (%s) abgelehnt; ihr Menü behält die vorherigen Voreinstellungen"
+
+#, c-format
+msgid "cannot read the SetPresets reply (%s): %s"
+msgstr "SetPresets-Antwort kann nicht gelesen werden (%s): %s"
+
+#, c-format
+msgid "SetPresets failed: %s"
+msgstr "SetPresets fehlgeschlagen: %s"
+
+#, c-format
+msgid "waiting for the GNOME shell extension (%s): %s"
+msgstr "Warte auf die GNOME-Shell-Erweiterung (%s): %s"
+
+#, c-format
+msgid "the shell extension skipped %s: %s"
+msgstr "die Shell-Erweiterung hat %s übersprungen: %s"
+
+msgid "<unnamed>"
+msgstr "<unbenannt>"
+
+msgid "invalid preset"
+msgstr "ungültige Voreinstellung"
+
+#, c-format
+msgid "options.hotkey: %s; the GNOME extension keeps its current keybinding"
+msgstr "options.hotkey: %s; die GNOME-Erweiterung behält ihre aktuelle Tastenkombination"
+
+#, c-format
+msgid "cannot connect to the session bus: %s"
+msgstr "kann nicht zum Sitzungsbus verbinden: %s"
+
+#, c-format
+msgid "unsupported version %d, expected %d"
+msgstr "nicht unterstützte Version %d, erwartet %d"
+
+msgid "a separator must not carry a label, size, anchor, position, hotkey or monitor"
+msgstr "ein Trenner darf kein Label, Größe, Anker, Position, Schnelltaste oder Monitor tragen"
+
+msgid "label must not be empty"
+msgstr "Label darf nicht leer sein"
+
+#, c-format
+msgid "duplicate label %s in the same group"
+msgstr "doppeltes Label %s in derselben Gruppe"
+
+msgid "hotkey must not be empty"
+msgstr "Schnelltaste darf nicht leer sein"
+
+msgid "x and y must be set together"
+msgstr "x und y müssen zusammen gesetzt werden"
+
+msgid "anchor and x/y are mutually exclusive"
+msgstr "Anker und x/y schließen sich gegenseitig aus"
+
+msgid "not an object"
+msgstr "kein Objekt"
+
+msgid "size must look like 1024x768 or 50%x50%"
+msgstr "Größe muss wie 1024x768 oder 50%x50% aussehen"
+
+#, c-format
+msgid "unknown anchor %s"
+msgstr "unbekannter Anker %s"
+
+msgid "x and y must be integers set together"
+msgstr "x und y müssen zusammen gesetzte Ganzzahlen sein"
+
+#, c-format
+msgid "unknown monitor %s"
+msgstr "unbekannter Monitor %s"
+
+msgid "no_target_window"
+msgstr "kein Zielfenster"
+
+msgid "no_such_monitor"
+msgstr "kein solcher Monitor"
+
+msgid "no_work_area"
+msgstr "kein Arbeitsbereich"
+
+msgid "no_presets"
+msgstr "keine Voreinstellungen"
+
+msgid "menu_closed"
+msgstr "Menü geschlossen"
+
+msgid "no_such_row"
+msgstr "keine solche Zeile"
+
+msgid "window destroyed"
+msgstr "Fenster zerstört"
+
+msgid "superseded"
+msgstr "abgelöst"
+
+msgid "unmaximize_timeout"
+msgstr "Timeout beim Entmaximieren"

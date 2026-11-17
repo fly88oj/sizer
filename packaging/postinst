@@ -1,0 +1,23 @@
+#!/bin/sh
+set -e
+
+if [ "$1" = "configure" ]; then
+    cat <<'EOF'
+Sizer is installed.
+
+GNOME: enable the shell extension once (log out and back in if it is not listed):
+  gnome-extensions enable sizer@sizerlinux.dev
+
+Background preset sync (optional, keeps the extension menu on your configuration):
+  systemctl --user daemon-reload
+  systemctl --user enable --now sizer-daemon
+
+Tray icon (optional, shows one menu entry per preset):
+  systemctl --user enable --now sizer-tray
+
+Edit presets in a window:
+  sizer config edit
+EOF
+fi
+
+exit 0

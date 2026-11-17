@@ -1,0 +1,57 @@
+#!/bin/sh
+set -e
+
+# Hand the user-level bits back to the person who owns them. postrm runs as
+# root, so `systemctl --user` here would talk to root's manager, not to the
+# session that owns the unit. SUDO_USER is set by sudo/apt; when it is missing
+# (plain `dpkg -i` as root) the instruction below is all we can honestly give.
+run_as_installer() {
+    [ -n "${SUDO_USER:-}" ] && [ "$SUDO_USER" != "root" ] || return 1
+    if command -v runuser >/dev/null 2>&1; then
+        runuser -u "$SUDO_USER" -- "$@"
+    else
+        su -s /bin/sh "$SUDO_USER" -c "$(printf '%s ' "$@")"
+    fi
+}
+
+# A wants-link left behind by `systemctl --user enable` points at a unit that
+# no longer exists; systemd then reports a failed unit at every login. Remove
+# it only when it is ours (a symlink into this package's unit path).
+remove_dangling_wants() {
+    home="$1"
+    for unit in sizer-daemon.service sizer-tray.service; do
+        link="$home/.config/systemd/user/default.target.wants/$unit"
+        if [ -L "$link" ]; then
+            target="$(readlink "$link" 2>/dev/null || true)"
+            case "$target" in
+                /usr/lib/systemd/user/$unit*|*$unit)
+                    rm -f "$link"
+                    ;;
+            esac
+        fi
+    done
+}
+
+if [ "$1" = "remove" ] || [ "$1" = "purge" ]; then
+    if [ -n "${SUDO_USER:-}" ] && [ "$SUDO_USER" != "root" ]; then
+        run_as_installer systemctl --user disable --now sizer-daemon.service \
+            sizer-tray.service >/dev/null 2>&1 || true
+        run_as_installer systemctl --user daemon-reload >/dev/null 2>&1 || true
+        home="$(getent passwd "$SUDO_USER" | cut -d: -f6)"
+        [ -n "$home" ] && remove_dangling_wants "$home"
+    fi
+    cat <<'EOF'
+Sizer removed. Per-user state is deliberately left untouched:
+  ~/.config/sizer/config.toml            your presets
+  the extension UUID in org.gnome.shell  enabled-extensions
+
+To drop the extension entry:
+  gnome-extensions disable sizer@sizerlinux.dev
+
+If you enabled the daemon and ran this removal as root without SUDO_USER,
+stop it once from your own session:
+  systemctl --user disable --now sizer-daemon.service
+EOF
+fi
+
+exit 0

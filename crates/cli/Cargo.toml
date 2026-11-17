@@ -1,0 +1,25 @@
+[package]
+name = "sizer-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "sizer"
+path = "src/main.rs"
+
+[dependencies]
+sizer-core = { workspace = true }
+sizer-config = { workspace = true }
+sizer-platform = { workspace = true }
+sizer-tray = { workspace = true }
+sizer-popup = { workspace = true }
+sizer-backend-x11 = { workspace = true }
+sizer-macro = { workspace = true }
+clap = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+zbus = { workspace = true }
+gtk4 = { workspace = true }
+gettext = { workspace = true }

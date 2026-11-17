@@ -1,0 +1,67 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: sizer
+Comment:
+ Sizer itself is MIT licensed, see the Files paragraph below.
+ .
+ Every component listed here was read from its own copyright file in the
+ distribution it ships with; the license named is the one that file states,
+ and the wording records how Sizer relates to that component.
+ .
+ Linked into /usr/bin/sizer (each one appears in `ldd /usr/bin/sizer`):
+ .
+   * Xft, source package libxft2, /usr/share/doc/libxft2/copyright:
+     MIT/X11-style permission notice, Copyright (c) 2001,2003 Keith Packard.
+     Dynamically linked as libXft.so.2.
+   * fontconfig, source package libfontconfig1,
+     /usr/share/doc/libfontconfig1/copyright: MIT/X11-style permission
+     notice, Copyright (c) 2001,2003 Keith Packard. Dynamically linked as
+     libfontconfig.so.1.
+   * libX11, source package libx11-6, /usr/share/doc/libx11-6/copyright:
+     the X.Org standard copyright, a MIT-style permissive license.
+     Dynamically linked as libX11.so.6.
+   * FreeType, source package libfreetype6,
+     /usr/share/doc/libfreetype6/copyright: FTL and Expat. Dynamically
+     linked as libfreetype.so.6 through Xft.
+ .
+ Present in the process that hosts the extension, but not linked into Sizer:
+ .
+   * GNOME Shell, source package gnome-shell,
+     /usr/share/doc/gnome-shell/copyright: GPL-2+ (parts LGPL-2+,
+     LGPL-2.1). The extension under
+     /usr/share/gnome-shell/extensions/sizer@sizerlinux.dev is GJS source
+     that the running GNOME Shell loads and interprets; it imports Shell's
+     own JS modules (resource:///org/gnome/shell/...) and exports one D-Bus
+     interface. It is not compiled against, linked to, or derived from GNOME
+     Shell, so GPL-2+ does not extend to it.
+   * GTK 4, source package libgtk-4-1, /usr/share/doc/libgtk-4-1/copyright:
+     LGPL-2.1+. Not linked by Sizer; the GNOME Shell process loads it, and
+     the extension calls no GTK API.
+   * libadwaita, source package libadwaita-1-0,
+     /usr/share/doc/libadwaita-1-0/copyright: LGPL-2.1+ (GPL-3+ where
+     combined). Not linked and not loaded: nothing in Sizer imports it.
+ .
+ The Rust dependencies statically linked into /usr/bin/sizer are recorded,
+ with their license identifiers, in the project's Cargo.lock.
+
+Files: *
+Copyright: 2026 Jowency
+License: MIT
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to
+ deal in the Software without restriction, including without limitation the
+ rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ DEALINGS IN THE SOFTWARE.

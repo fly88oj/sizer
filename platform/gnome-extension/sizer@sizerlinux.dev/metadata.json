@@ -1,0 +1,8 @@
+{
+  "uuid": "sizer@sizerlinux.dev",
+  "name": "Sizer",
+  "description": "Window sizing and preset control for Sizer's GNOME Wayland backend.",
+  "shell-version": ["46", "50"],
+  "settings-schema": "org.gnome.shell.extensions.sizer",
+  "version": 1
+}

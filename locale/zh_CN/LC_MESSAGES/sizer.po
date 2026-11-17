@@ -1,0 +1,464 @@
+# Sizer - 窗口尺寸工具
+# Copyright (C) 2026 Jowency
+# This file is distributed under the MIT license.
+#
+# Chinese (Simplified) translation for Sizer.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Sizer 0.1.0\n"
+"POT-Creation-Date: 2026-11-17 00:00+0000\n"
+"PO-Revision-Date: 2026-11-17 00:00+0800\n"
+"Last-Translator: \n"
+"Language-Team: Chinese (Simplified)\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. From sizer.desktop
+msgid "Sizer"
+msgstr "Sizer"
+
+#. From sizer.desktop
+msgid "Choose a window size preset at the pointer"
+msgstr "在指针处选择窗口尺寸预设"
+
+#. From tray/src/lib.rs - tray title
+msgid "No presets configured"
+msgstr "未配置任何预设"
+
+#. From tray/src/lib.rs - no active window label
+msgid "no active window"
+msgstr "无活动窗口"
+
+#. From popup/src/lib.rs - overflow submenu label
+#, c-format
+msgid "... %d more"
+msgstr "... 还有 %d 项"
+
+#. From popup/src/lib.rs - no preset entries error
+msgid "the preset menu has no entries"
+msgstr "预设菜单没有任何条目"
+
+#. From popup/src/lib.rs - X display error
+#, c-format
+msgid "cannot open X display: %s"
+msgstr "无法打开 X 显示：%s"
+
+#. From popup/src/lib.rs - pointer grab held by another client
+#, c-format
+msgid "another client holds the pointer (grab status %s after %d attempts); GNOME holds the devices itself, use the shell extension menu there"
+msgstr "另一个客户端占用了指针（抓取状态为 %1$s，尝试 %2$d 次）；GNOME 自身占用设备，请在那里使用外壳扩展菜单"
+
+#. From popup/src/lib.rs - keyboard grab held by another client
+#, c-format
+msgid "another client holds the keyboard (grab status %s after %d attempts); GNOME keeps the devices grabbed for the whole session, use the shell extension menu there"
+msgstr "另一个客户端占用了键盘（抓取状态为 %1$s，尝试 %2$d 次）；GNOME 在整个会话期间保持设备占用，请在那里使用外壳扩展菜单"
+
+#. From popup/src/lib.rs - menu window never mapped
+msgid "the menu window was never mapped"
+msgstr "菜单窗口从未被映射"
+
+#. From cli/src/main.rs - window list empty
+msgid "no controllable windows"
+msgstr "无可控制的窗口"
+
+#. From cli/src/main.rs - header for window list table
+msgid "ID"
+msgstr "ID"
+
+msgid "APP"
+msgstr "应用"
+
+msgid "SIZE"
+msgstr "尺寸"
+
+msgid "POSITION"
+msgstr "位置"
+
+msgid "TITLE"
+msgstr "标题"
+
+#. From cli/src/main.rs - basis labels for geometry output
+msgid "frame"
+msgstr "边框"
+
+msgid "client"
+msgstr "客户端"
+
+#. From cli/src/main.rs - extents labels
+msgid "extents"
+msgstr "边距"
+
+msgid "left"
+msgstr "左"
+
+msgid "top"
+msgstr "上"
+
+msgid "right"
+msgstr "右"
+
+msgid "bottom"
+msgstr "下"
+
+msgid "decorated"
+msgstr "有装饰"
+
+msgid "undecorated"
+msgstr "无装饰"
+
+msgid "selected"
+msgstr "选中"
+
+#. From cli/src/main.rs - resize errors
+msgid "resize needs exactly one of --size or --percent"
+msgstr "resize 必须使用 --size 或 --percent 其中之一"
+
+#. From cli/src/main.rs - move errors
+msgid "move needs --anchor or --x/--y"
+msgstr "move 需要 --anchor 或 --x/--y"
+
+#. From cli/src/main.rs - anchor/position conflicts
+msgid "--anchor and --x/--y are mutually exclusive"
+msgstr "--anchor 与 --x/--y 互斥"
+
+msgid "--x needs --y as well"
+msgstr "--x 必须同时指定 --y"
+
+msgid "--y needs --x as well"
+msgstr "--y 必须同时指定 --x"
+
+#. From cli/src/main.rs - preset operations
+#, c-format
+msgid "preset %s already exists in %s; use `sizer preset set` to change it"
+msgstr "预设 %s 已存在于 %s；请使用 `sizer preset set` 修改它"
+
+msgid "--position is 1-based and must be at least 1"
+msgstr "--position 从 1 开始，必须至少为 1"
+
+#, c-format
+msgid "--position %d is out of range: %s holds %d preset(s)"
+msgstr "--position %d 超出范围：%s 中有 %d 个预设"
+
+msgid "preset label must not be empty"
+msgstr "预设标签不能为空"
+
+#, c-format
+msgid "row #%d is a menu separator; %s it makes no sense — remove it instead"
+msgstr "第 %d 行是菜单分隔线；%s 它没有意义——请改为删除它"
+
+#. From cli/src/main.rs - report_preset actions
+msgid "added"
+msgstr "已添加"
+
+msgid "updated"
+msgstr "已更新"
+
+msgid "removed"
+msgstr "已删除"
+
+msgid "moved"
+msgstr "已移动"
+
+msgid "copied"
+msgstr "已复制"
+
+msgid "separator"
+msgstr "分隔线"
+
+#, c-format
+msgid "%s separator in %s"
+msgstr "在 %s 中%s分隔线"
+
+#, c-format
+msgid "%s %s (%s) in %s"
+msgstr "在 %s 中%s %s（%s）"
+
+#. From cli/src/main.rs - preset list headers
+msgid "IDX | GROUP | LABEL | SIZE | ANCHOR | HOTKEY"
+msgstr "序号 | 分组 | 标签 | 尺寸 | 锚点 | 快捷键"
+
+msgid "<separator>"
+msgstr "<分隔线>"
+
+#. From cli/src/main.rs - copy label suffix
+#, c-format
+msgid "%s copy"
+msgstr "%s 副本"
+
+#, c-format
+msgid "%s copy %d"
+msgstr "%s 副本 %d"
+
+#. From cli/src/main.rs - saved preset report
+#, c-format
+msgid "saved %s from window %s as %s in %s"
+msgstr "已将窗口 %s 的 %s 尺寸保存为 %s 到 %s"
+
+#. From cli/src/main.rs - describe_group
+msgid "the top level"
+msgstr "顶层"
+
+#, c-format
+msgid "group %s"
+msgstr "分组 %s"
+
+#. From cli/src/main.rs - daemon mode
+msgid "daemon writes plain logs, not JSON; drop --json"
+msgstr "daemon 输出普通日志，不输出 JSON；请去掉 --json"
+
+msgid "no macro given and standard input is empty"
+msgstr "未提供宏且标准输入为空"
+
+#. From cli/src/main.rs - config status
+msgid "cannot locate a configuration file (use --config, XDG_CONFIG_HOME or HOME)"
+msgstr "找不到配置文件（使用 --config、XDG_CONFIG_HOME 或 HOME）"
+
+#, c-format
+msgid "%s (missing; built-in presets apply)"
+msgstr "%s（缺失；应用内置预设）"
+
+msgid "configuration is invalid"
+msgstr "配置无效"
+
+#, c-format
+msgid "%s (invalid: %s; run `sizer config check`)"
+msgstr "%s（无效：%s；请运行 `sizer config check`）"
+
+#, c-format
+msgid "%s (%d preset%s)"
+msgstr "%s（%d 个预设%s）"
+
+#. From cli/src/main.rs - hotkey output
+msgid "hotkey %s registered and delivery verified"
+msgstr "快捷键 %s 已注册并验证触发"
+
+#, c-format
+msgid "hotkey %s registered but unverified: %s"
+msgstr "快捷键 %s 已注册但未验证：%s"
+
+#, c-format
+msgid "hotkey %s unavailable: %s"
+msgstr "快捷键 %s 不可用：%s"
+
+#, c-format
+msgid "fired %d time(s) in %ds"
+msgstr "在 %d 秒内触发了 %d 次"
+
+#. From cli/src/main.rs - shell extension status
+msgid "gnome extension not on the session bus (install it, log out and back in, then `gnome-extensions enable sizer@sizerlinux.dev`)"
+msgstr "GNOME 扩展不在会话总线上（安装它，注销后重新登录，然后运行 `gnome-extensions enable sizer@sizerlinux.dev`）"
+
+#, c-format
+msgid "gnome extension running (%d presets, menu %s)"
+msgstr "GNOME 扩展运行中（%d 个预设，菜单%s）"
+
+msgid "open"
+msgstr "打开"
+
+msgid "closed"
+msgstr "关闭"
+
+#. From cli/src/main.rs - doctor command
+msgid "session"
+msgstr "会话"
+
+msgid "config"
+msgstr "配置"
+
+msgid "shell"
+msgstr "外壳"
+
+msgid "backend"
+msgstr "后端"
+
+msgid "caps"
+msgstr "能力"
+
+msgid "monitors"
+msgstr "显示器"
+
+#, c-format
+msgid "session %s"
+msgstr "会话 %s"
+
+#, c-format
+msgid "config %s"
+msgstr "配置 %s"
+
+#, c-format
+msgid "shell %s"
+msgstr "外壳 %s"
+
+#, c-format
+msgid "backend %s (%s)"
+msgstr "后端 %s（%s）"
+
+#, c-format
+msgid "monitors %d"
+msgstr "显示器 %d"
+
+#, c-format
+msgid "  [%d] %s"
+msgstr "  [%d] %s"
+
+#, c-format
+msgid "workarea %dx%d at %d,%d"
+msgstr "工作区 %dx%d 位于 %d,%d"
+
+msgid "active"
+msgstr "活动"
+
+msgid "active   none"
+msgstr "活动窗口 无"
+
+#, c-format
+msgid "active   %s"
+msgstr "活动窗口 %s"
+
+#. From cli/src/main.rs - window output
+#, c-format
+msgid "window %s above = %s"
+msgstr "窗口 %s 置顶 = %s"
+
+#, c-format
+msgid "window %s maximized = %s"
+msgstr "窗口 %s 最大化 = %s"
+
+#. From daemon.rs - daemon messages
+#, c-format
+msgid "no configuration file at %s; using built-in presets"
+msgstr "在 %s 处无配置文件；使用内置预设"
+
+#, c-format
+msgid "watching %s"
+msgstr "正在监听 %s"
+
+#, c-format
+msgid "%s disappeared; using built-in presets"
+msgstr "%s 已消失；使用内置预设"
+
+#, c-format
+msgid "configuration changed; pushing new presets"
+msgstr "配置已变更；正在推送新预设"
+
+#, c-format
+msgid "%s: %s; keeping the last good presets"
+msgstr "%s：%s；保留上一次有效的预设"
+
+msgid "shell extension is back"
+msgstr "外壳扩展已恢复"
+
+#, c-format
+msgid "pushed %d of %d presets from %s"
+msgstr "已推送 %1$d/%2$d 个预设，来源 %3$s"
+
+msgid "built-in presets"
+msgstr "内置预设"
+
+#, c-format
+msgid "the shell extension rejected the preset list (%s); its menu keeps the previous presets"
+msgstr "外壳扩展拒绝了预设列表（%s）；其菜单保留上一次的预设"
+
+#, c-format
+msgid "cannot read the SetPresets reply (%s): %s"
+msgstr "无法读取 SetPresets 回复（%s）：%s"
+
+#, c-format
+msgid "SetPresets failed: %s"
+msgstr "SetPresets 失败：%s"
+
+#, c-format
+msgid "waiting for the GNOME shell extension (%s): %s"
+msgstr "正在等待 GNOME 外壳扩展（%s）：%s"
+
+#, c-format
+msgid "the shell extension skipped %s: %s"
+msgstr "外壳扩展跳过了 %s：%s"
+
+msgid "<unnamed>"
+msgstr "<未命名>"
+
+msgid "invalid preset"
+msgstr "无效预设"
+
+#. From daemon.rs - hotkey warnings
+#, c-format
+msgid "options.hotkey: %s; the GNOME extension keeps its current keybinding"
+msgstr "options.hotkey：%s；GNOME 扩展保留当前按键绑定"
+
+#, c-format
+msgid "cannot connect to the session bus: %s"
+msgstr "无法连接到会话总线：%s"
+
+#. From config/src/lib.rs - validation messages
+#, c-format
+msgid "unsupported version %d, expected %d"
+msgstr "不支持的版本 %d，期望 %d"
+
+msgid "a separator must not carry a label, size, anchor, position, hotkey or monitor"
+msgstr "分隔线不能带有标签、尺寸、锚点、位置、快捷键或显示器"
+
+msgid "label must not be empty"
+msgstr "标签不能为空"
+
+#, c-format
+msgid "duplicate label %s in the same group"
+msgstr "同一分组中存在重复标签 %s"
+
+msgid "hotkey must not be empty"
+msgstr "快捷键不能为空"
+
+msgid "x and y must be set together"
+msgstr "x 和 y 必须同时设置"
+
+msgid "anchor and x/y are mutually exclusive"
+msgstr "anchor 与 x/y 互斥"
+
+#. From extension.js - preset problem descriptions
+msgid "not an object"
+msgstr "不是对象"
+
+msgid "size must look like 1024x768 or 50%x50%"
+msgstr "尺寸格式必须为 1024x768 或 50%x50%"
+
+#, c-format
+msgid "unknown anchor %s"
+msgstr "未知锚点 %s"
+
+msgid "x and y must be integers set together"
+msgstr "x 和 y 必须是整数且同时设置"
+
+#, c-format
+msgid "unknown monitor %s"
+msgstr "未知显示器 %s"
+
+#. From extension.js - preset result errors
+msgid "no_target_window"
+msgstr "无目标窗口"
+
+msgid "no_such_monitor"
+msgstr "无此显示器"
+
+msgid "no_work_area"
+msgstr "无工作区"
+
+msgid "no_presets"
+msgstr "无预设"
+
+msgid "menu_closed"
+msgstr "菜单已关闭"
+
+msgid "no_such_row"
+msgstr "无此行"
+
+msgid "window destroyed"
+msgstr "窗口已销毁"
+
+msgid "superseded"
+msgstr "已被取代"
+
+msgid "unmaximize_timeout"
+msgstr "取消最大化超时"

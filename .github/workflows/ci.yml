@@ -1,0 +1,70 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Pin to 24.04 (Noble) — matches our dev environment and all e2e harnesses.
+# 26.04 (resolute) has renamed gir packages (webkitgtk-4.0 → 4.1) and is not
+# our primary verification target yet.
+jobs:
+  rust:
+    name: Rust unit tests + clippy + fmt
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        rust: [stable]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install system deps
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y libgtk-4-dev libglib2.0-dev libpango1.0-dev \
+                                   libx11-dev libxrandr-dev libxtst-dev libxi-dev \
+                                   gettext
+      - name: Install Rust ${{ matrix.rust }}
+        uses: dtolnay/rust-toolchain@stable
+      - name: Cache
+        uses: Swatinem/rust-cache@v2
+      - name: fmt
+        run: cargo fmt --check --all
+      - name: clippy
+        run: cargo clippy --workspace --all-targets -- -D warnings
+      - name: test
+        run: cargo test --workspace
+
+  js-unit:
+    name: Extension JS unit tests
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install GJS
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y gobject-introspection libgirepository1.0-dev \
+            gir1.2-glib-2.0 gjs gnome-shell
+          # JSC gir was renamed 4.0 → 4.1 on 26.04. Try both, pick whichever
+          # apt actually has in its index on this runner.
+          for pkg in gir1.2-javascriptcoregtk-4.1 gir1.2-javascriptcoregtk-4.0; do
+            if apt-cache show "$pkg" >/dev/null 2>&1; then
+              sudo apt-get install -y "$pkg" && break
+            fi
+          done
+      - name: Run extension JS unit tests
+        run: gjs -m tests/unit/preset_state_test.js
+
+  gate:
+    name: Release gate summary
+    runs-on: ubuntu-24.04
+    needs: [rust, js-unit]
+    if: always()
+    steps:
+      - name: Gate status
+        run: |
+          if [ "${{ needs.rust.result }}" = "success" ] && [ "${{ needs.js-unit.result }}" = "success" ]; then
+            echo "All checks green."; exit 0
+          else
+            echo "Some checks failed."; exit 1
+          fi

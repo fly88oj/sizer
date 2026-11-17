@@ -1,0 +1,11 @@
+[Unit]
+Description=Show the Sizer preset tray (StatusNotifierItem)
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/sizer tray
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

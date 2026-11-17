@@ -1,0 +1,430 @@
+# Sizer - Utilidad de tamaño de ventanas
+# Copyright (C) 2026 Jowency
+# This file is distributed under the MIT license.
+#
+# Spanish translation for Sizer.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Sizer 0.1.0\n"
+"POT-Creation-Date: 2026-11-17 00:00+0000\n"
+"PO-Revision-Date: 2026-11-17 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Sizer"
+msgstr "Sizer"
+
+msgid "Choose a window size preset at the pointer"
+msgstr "Elegir un preset de tamaño de ventana en el puntero"
+
+msgid "No presets configured"
+msgstr "No hay presets configurados"
+
+msgid "no active window"
+msgstr "ninguna ventana activa"
+
+#, c-format
+msgid "... %d more"
+msgstr "... %d más"
+
+msgid "the preset menu has no entries"
+msgstr "el menú de presets no tiene entradas"
+
+#, c-format
+msgid "cannot open X display: %s"
+msgstr "no se puede abrir la pantalla X: %s"
+
+#, c-format
+msgid "another client holds the pointer (grab status %s after %d attempts); GNOME holds the devices itself, use the shell extension menu there"
+msgstr "otro cliente tiene el puntero (estado de captura %s tras %d intentos); GNOME mantiene los dispositivos, usa el menú de la extensión del shell allí"
+
+#, c-format
+msgid "another client holds the keyboard (grab status %s after %d attempts); GNOME keeps the devices grabbed for the whole session, use the shell extension menu there"
+msgstr "otro cliente tiene el teclado (estado de captura %s tras %d intentos); GNOME mantiene los dispositivos capturados durante toda la sesión, usa el menú de la extensión del shell allí"
+
+msgid "the menu window was never mapped"
+msgstr "la ventana del menú nunca fue mapeada"
+
+msgid "no controllable windows"
+msgstr "no hay ventanas controlables"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "APP"
+msgstr "APP"
+
+msgid "SIZE"
+msgstr "TAMAÑO"
+
+msgid "POSITION"
+msgstr "POSICIÓN"
+
+msgid "TITLE"
+msgstr "TÍTULO"
+
+msgid "frame"
+msgstr "marco"
+
+msgid "client"
+msgstr "cliente"
+
+msgid "extents"
+msgstr "extensores"
+
+msgid "left"
+msgstr "izquierda"
+
+msgid "top"
+msgstr "arriba"
+
+msgid "right"
+msgstr "derecha"
+
+msgid "bottom"
+msgstr "abajo"
+
+msgid "decorated"
+msgstr "decorado"
+
+msgid "undecorated"
+msgstr "sin decorar"
+
+msgid "selected"
+msgstr "seleccionado"
+
+msgid "resize needs exactly one of --size or --percent"
+msgstr "resize necesita exactamente uno de --size o --percent"
+
+msgid "move needs --anchor or --x/--y"
+msgstr "move necesita --anchor o --x/--y"
+
+msgid "--anchor and --x/--y are mutually exclusive"
+msgstr "--anchor y --x/--y son mutuamente excluyentes"
+
+msgid "--x needs --y as well"
+msgstr "--x necesita también --y"
+
+msgid "--y needs --x as well"
+msgstr "--y necesita también --x"
+
+#, c-format
+msgid "preset %s already exists in %s; use `sizer preset set` to change it"
+msgstr "el preset %s ya existe en %s; usa `sizer preset set` para cambiarlo"
+
+msgid "--position is 1-based and must be at least 1"
+msgstr "--position es basado en 1 y debe ser al menos 1"
+
+#, c-format
+msgid "--position %d is out of range: %s holds %d preset(s)"
+msgstr "--position %d está fuera de rango: %s tiene %d preset(s)"
+
+msgid "preset label must not be empty"
+msgstr "la etiqueta del preset no debe estar vacía"
+
+#, c-format
+msgid "row #%d is a menu separator; %s it makes no sense — remove it instead"
+msgstr "la fila #%d es un separador de menú; %s no tiene sentido — elimínala en su lugar"
+
+msgid "added"
+msgstr "añadido"
+
+msgid "updated"
+msgstr "actualizado"
+
+msgid "removed"
+msgstr "eliminado"
+
+msgid "moved"
+msgstr "movido"
+
+msgid "copied"
+msgstr "copiado"
+
+msgid "separator"
+msgstr "separador"
+
+#, c-format
+msgid "%s separator in %s"
+msgstr "separador %s en %s"
+
+#, c-format
+msgid "%s %s (%s) in %s"
+msgstr "%s %s (%s) en %s"
+
+msgid "IDX | GROUP | LABEL | SIZE | ANCHOR | HOTKEY"
+msgstr "NÚM | GRUPO | ETIQUETA | TAMAÑO | ANCLA | TECLA RÁPIDA"
+
+msgid "<separator>"
+msgstr "<separador>"
+
+#, c-format
+msgid "%s copy"
+msgstr "copia de %s"
+
+#, c-format
+msgid "%s copy %d"
+msgstr "copia de %s %d"
+
+#, c-format
+msgid "saved %s from window %s as %s in %s"
+msgstr "guardado %s de la ventana %s como %s en %s"
+
+msgid "the top level"
+msgstr "el nivel superior"
+
+#, c-format
+msgid "group %s"
+msgstr "grupo %s"
+
+msgid "daemon writes plain logs, not JSON; drop --json"
+msgstr "daemon escribe registros planos, no JSON; elimina --json"
+
+msgid "no macro given and standard input is empty"
+msgstr "no se dio ninguna macro y la entrada estándar está vacía"
+
+msgid "cannot locate a configuration file (use --config, XDG_CONFIG_HOME or HOME)"
+msgstr "no se puede localizar un archivo de configuración (usa --config, XDG_CONFIG_HOME o HOME)"
+
+#, c-format
+msgid "%s (missing; built-in presets apply)"
+msgstr "%s (faltante; se aplican los presets integrados)"
+
+msgid "configuration is invalid"
+msgstr "la configuración no es válida"
+
+#, c-format
+msgid "%s (invalid: %s; run `sizer config check`)"
+msgstr "%s (inválido: %s; ejecuta `sizer config check`)"
+
+#, c-format
+msgid "%s (%d preset%s)"
+msgstr "%s (%d preset%s)"
+
+msgid "hotkey %s registered and delivery verified"
+msgstr "tecla rápida %s registrada y entrega verificada"
+
+#, c-format
+msgid "hotkey %s registered but unverified: %s"
+msgstr "tecla rápida %s registrada pero no verificada: %s"
+
+#, c-format
+msgid "hotkey %s unavailable: %s"
+msgstr "tecla rápida %s no disponible: %s"
+
+#, c-format
+msgid "fired %d time(s) in %ds"
+msgstr "disparada %d vez(veces) en %ds"
+
+msgid "gnome extension not on the session bus (install it, log out and back in, then `gnome-extensions enable sizer@sizerlinux.dev`)"
+msgstr "la extensión GNOME no está en el bus de sesión (instálala, cierra sesión y vuelve a iniciar, luego `gnome-extensions enable sizer@sizerlinux.dev`)"
+
+#, c-format
+msgid "gnome extension running (%d presets, menu %s)"
+msgstr "extensión GNOME en ejecución (%d presets, menú %s)"
+
+msgid "open"
+msgstr "abierto"
+
+msgid "closed"
+msgstr "cerrado"
+
+msgid "session"
+msgstr "sesión"
+
+msgid "config"
+msgstr "config"
+
+msgid "shell"
+msgstr "shell"
+
+msgid "backend"
+msgstr "backend"
+
+msgid "caps"
+msgstr "capacidades"
+
+msgid "monitors"
+msgstr "monitores"
+
+#, c-format
+msgid "session %s"
+msgstr "sesión %s"
+
+#, c-format
+msgid "config %s"
+msgstr "config %s"
+
+#, c-format
+msgid "shell %s"
+msgstr "shell %s"
+
+#, c-format
+msgid "backend %s (%s)"
+msgstr "backend %s (%s)"
+
+#, c-format
+msgid "monitors %d"
+msgstr "monitores %d"
+
+#, c-format
+msgid "  [%d] %s"
+msgstr "  [%d] %s"
+
+#, c-format
+msgid "workarea %dx%d at %d,%d"
+msgstr "área de trabajo %dx%d en %d,%d"
+
+msgid "active"
+msgstr "activo"
+
+msgid "active   none"
+msgstr "activo   ninguno"
+
+#, c-format
+msgid "active   %s"
+msgstr "activo   %s"
+
+#, c-format
+msgid "window %s above = %s"
+msgstr "ventana %s encima = %s"
+
+#, c-format
+msgid "window %s maximized = %s"
+msgstr "ventana %s maximizada = %s"
+
+#, c-format
+msgid "no configuration file at %s; using built-in presets"
+msgstr "ningún archivo de configuración en %s; usando presets integrados"
+
+#, c-format
+msgid "watching %s"
+msgstr "vigilando %s"
+
+#, c-format
+msgid "%s disappeared; using built-in presets"
+msgstr "%s desapareció; usando presets integrados"
+
+#, c-format
+msgid "configuration changed; pushing new presets"
+msgstr "configuración cambiada; enviando nuevos presets"
+
+#, c-format
+msgid "%s: %s; keeping the last good presets"
+msgstr "%s: %s; manteniendo los últimos presets válidos"
+
+msgid "shell extension is back"
+msgstr "la extensión del shell volvió"
+
+#, c-format
+msgid "pushed %d of %d presets from %s"
+msgstr "enviados %d de %d presets desde %s"
+
+msgid "built-in presets"
+msgstr "presets integrados"
+
+#, c-format
+msgid "the shell extension rejected the preset list (%s); its menu keeps the previous presets"
+msgstr "la extensión del shell rechazó la lista de presets (%s); su menú mantiene los presets anteriores"
+
+#, c-format
+msgid "cannot read the SetPresets reply (%s): %s"
+msgstr "no se puede leer la respuesta de SetPresets (%s): %s"
+
+#, c-format
+msgid "SetPresets failed: %s"
+msgstr "SetPresets falló: %s"
+
+#, c-format
+msgid "waiting for the GNOME shell extension (%s): %s"
+msgstr "esperando la extensión del shell GNOME (%s): %s"
+
+#, c-format
+msgid "the shell extension skipped %s: %s"
+msgstr "la extensión del shell omitió %s: %s"
+
+msgid "<unnamed>"
+msgstr "<sin nombre>"
+
+msgid "invalid preset"
+msgstr "preset inválido"
+
+#, c-format
+msgid "options.hotkey: %s; the GNOME extension keeps its current keybinding"
+msgstr "options.hotkey: %s; la extensión GNOME mantiene su combinación de teclas actual"
+
+#, c-format
+msgid "cannot connect to the session bus: %s"
+msgstr "no se puede conectar al bus de sesión: %s"
+
+#, c-format
+msgid "unsupported version %d, expected %d"
+msgstr "versión no compatible %d, esperada %d"
+
+msgid "a separator must not carry a label, size, anchor, position, hotkey or monitor"
+msgstr "un separador no debe tener etiqueta, tamaño, ancla, posición, tecla rápida o monitor"
+
+msgid "label must not be empty"
+msgstr "la etiqueta no debe estar vacía"
+
+#, c-format
+msgid "duplicate label %s in the same group"
+msgstr "etiqueta duplicada %s en el mismo grupo"
+
+msgid "hotkey must not be empty"
+msgstr "la tecla rápida no debe estar vacía"
+
+msgid "x and y must be set together"
+msgstr "x e y deben establecerse juntos"
+
+msgid "anchor and x/y are mutually exclusive"
+msgstr "ancla y x/y son mutuamente excluyentes"
+
+msgid "not an object"
+msgstr "no es un objeto"
+
+msgid "size must look like 1024x768 or 50%x50%"
+msgstr "el tamaño debe parecerse a 1024x768 o 50%x50%"
+
+#, c-format
+msgid "unknown anchor %s"
+msgstr "ancla desconocida %s"
+
+msgid "x and y must be integers set together"
+msgstr "x e y deben ser enteros establecidos juntos"
+
+#, c-format
+msgid "unknown monitor %s"
+msgstr "monitor desconocido %s"
+
+msgid "no_target_window"
+msgstr "sin ventana objetivo"
+
+msgid "no_such_monitor"
+msgstr "no existe tal monitor"
+
+msgid "no_work_area"
+msgstr "sin área de trabajo"
+
+msgid "no_presets"
+msgstr "sin presets"
+
+msgid "menu_closed"
+msgstr "menú cerrado"
+
+msgid "no_such_row"
+msgstr "no existe tal fila"
+
+msgid "window destroyed"
+msgstr "ventana destruida"
+
+msgid "superseded"
+msgstr "superado"
+
+msgid "unmaximize_timeout"
+msgstr "tiempo agotado al desmaximizar"

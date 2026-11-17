@@ -1,0 +1,464 @@
+# Sizer - ウィンドウサイズユーティリティ
+# Copyright (C) 2026 Jowency
+# This file is distributed under the MIT license.
+#
+# Japanese translation for Sizer.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Sizer 0.1.0\n"
+"POT-Creation-Date: 2026-11-17 00:00+0000\n"
+"PO-Revision-Date: 2026-11-17 00:00+0900\n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. From sizer.desktop
+msgid "Sizer"
+msgstr "Sizer"
+
+#. From sizer.desktop
+msgid "Choose a window size preset at the pointer"
+msgstr "ポインタ位置でウィンドウサイズプリセットを選択"
+
+#. From tray/src/lib.rs - tray title
+msgid "No presets configured"
+msgstr "プリセットが設定されていません"
+
+#. From tray/src/lib.rs - no active window label
+msgid "no active window"
+msgstr "アクティブなウィンドウなし"
+
+#. From popup/src/lib.rs - overflow submenu label
+#, c-format
+msgid "... %d more"
+msgstr "... 他 %d 件"
+
+#. From popup/src/lib.rs - no preset entries error
+msgid "the preset menu has no entries"
+msgstr "プリセットメニューにエントリがありません"
+
+#. From popup/src/lib.rs - X display error
+#, c-format
+msgid "cannot open X display: %s"
+msgstr "X ディスプレイを開けません：%s"
+
+#. From popup/src/lib.rs - pointer grab held by another client
+#, c-format
+msgid "another client holds the pointer (grab status %s after %d attempts); GNOME holds the devices itself, use the shell extension menu there"
+msgstr "他のクライアントがポインタを保持しています（グラブステータス %1$s、%2$d 回の試行後）；GNOME 自体がデバイスを保持しているので、そこでシェル拡張メニューを使用してください"
+
+#. From popup/src/lib.rs - keyboard grab held by another client
+#, c-format
+msgid "another client holds the keyboard (grab status %s after %d attempts); GNOME keeps the devices grabbed for the whole session, use the shell extension menu there"
+msgstr "他のクライアントがキーボードを保持しています（グラブステータス %1$s、%2$d 回の試行後）；GNOME はセッション全体でデバイスをグラブしているので、そこでシェル拡張メニューを使用してください"
+
+#. From popup/src/lib.rs - menu window never mapped
+msgid "the menu window was never mapped"
+msgstr "メニューウィンドウがマップされませんでした"
+
+#. From cli/src/main.rs - window list empty
+msgid "no controllable windows"
+msgstr "制御可能なウィンドウがありません"
+
+#. From cli/src/main.rs - header for window list table
+msgid "ID"
+msgstr "ID"
+
+msgid "APP"
+msgstr "アプリ"
+
+msgid "SIZE"
+msgstr "サイズ"
+
+msgid "POSITION"
+msgstr "位置"
+
+msgid "TITLE"
+msgstr "タイトル"
+
+#. From cli/src/main.rs - basis labels for geometry output
+msgid "frame"
+msgstr "フレーム"
+
+msgid "client"
+msgstr "クライアント"
+
+#. From cli/src/main.rs - extents labels
+msgid "extents"
+msgstr "余白"
+
+msgid "left"
+msgstr "左"
+
+msgid "top"
+msgstr "上"
+
+msgid "right"
+msgstr "右"
+
+msgid "bottom"
+msgstr "下"
+
+msgid "decorated"
+msgstr "装飾あり"
+
+msgid "undecorated"
+msgstr "装飾なし"
+
+msgid "selected"
+msgstr "選択中"
+
+#. From cli/src/main.rs - resize errors
+msgid "resize needs exactly one of --size or --percent"
+msgstr "resize には --size または --percent のいずれか一方が必要です"
+
+#. From cli/src/main.rs - move errors
+msgid "move needs --anchor or --x/--y"
+msgstr "move には --anchor または --x/--y が必要です"
+
+#. From cli/src/main.rs - anchor/position conflicts
+msgid "--anchor and --x/--y are mutually exclusive"
+msgstr "--anchor と --x/--y は互いに排他的です"
+
+msgid "--x needs --y as well"
+msgstr "--x には --y も必要です"
+
+msgid "--y needs --x as well"
+msgstr "--y には --x も必要です"
+
+#. From cli/src/main.rs - preset operations
+#, c-format
+msgid "preset %s already exists in %s; use `sizer preset set` to change it"
+msgstr "プリセット %s は %s に既に存在します；変更するには `sizer preset set` を使用してください"
+
+msgid "--position is 1-based and must be at least 1"
+msgstr "--position は 1 から始まり、少なくとも 1 である必要があります"
+
+#, c-format
+msgid "--position %d is out of range: %s holds %d preset(s)"
+msgstr "--position %d は範囲外です：%s には %d 個のプリセットがあります"
+
+msgid "preset label must not be empty"
+msgstr "プリセットラベルは空にできません"
+
+#, c-format
+msgid "row #%d is a menu separator; %s it makes no sense — remove it instead"
+msgstr "行 #%d はメニューセパレータです；%s は意味がありません — 代わりに削除してください"
+
+#. From cli/src/main.rs - report_preset actions
+msgid "added"
+msgstr "追加"
+
+msgid "updated"
+msgstr "更新"
+
+msgid "removed"
+msgstr "削除"
+
+msgid "moved"
+msgstr "移動"
+
+msgid "copied"
+msgstr "コピー"
+
+msgid "separator"
+msgstr "セパレータ"
+
+#, c-format
+msgid "%s separator in %s"
+msgstr "%s の %s セパレータ"
+
+#, c-format
+msgid "%s %s (%s) in %s"
+msgstr "%s の %s %s（%s）"
+
+#. From cli/src/main.rs - preset list headers
+msgid "IDX | GROUP | LABEL | SIZE | ANCHOR | HOTKEY"
+msgstr "番号 | グループ | ラベル | サイズ | アンカー | ホットキー"
+
+msgid "<separator>"
+msgstr "<セパレータ>"
+
+#. From cli/src/main.rs - copy label suffix
+#, c-format
+msgid "%s copy"
+msgstr "%s コピー"
+
+#, c-format
+msgid "%s copy %d"
+msgstr "%s コピー %d"
+
+#. From cli/src/main.rs - saved preset report
+#, c-format
+msgid "saved %s from window %s as %s in %s"
+msgstr "ウィンドウ %s からの %s サイズを %s として %s に保存しました"
+
+#. From cli/src/main.rs - describe_group
+msgid "the top level"
+msgstr "トップレベル"
+
+#, c-format
+msgid "group %s"
+msgstr "グループ %s"
+
+#. From cli/src/main.rs - daemon mode
+msgid "daemon writes plain logs, not JSON; drop --json"
+msgstr "daemon は JSON ではなくプレーンログを書きます；--json を削除してください"
+
+msgid "no macro given and standard input is empty"
+msgstr "マクロが指定されておらず、標準入力も空です"
+
+#. From cli/src/main.rs - config status
+msgid "cannot locate a configuration file (use --config, XDG_CONFIG_HOME or HOME)"
+msgstr "設定ファイルが見つかりません（--config、XDG_CONFIG_HOME または HOME を使用してください）"
+
+#, c-format
+msgid "%s (missing; built-in presets apply)"
+msgstr "%s（缺失；ビルトインプリセットを使用）"
+
+msgid "configuration is invalid"
+msgstr "設定が無効です"
+
+#, c-format
+msgid "%s (invalid: %s; run `sizer config check`)"
+msgstr "%s（無効：%s；`sizer config check` を実行してください）"
+
+#, c-format
+msgid "%s (%d preset%s)"
+msgstr "%s（%d 個のプリセット%s）"
+
+#. From cli/src/main.rs - hotkey output
+msgid "hotkey %s registered and delivery verified"
+msgstr "ホットキー %s が登録され、配信が検証されました"
+
+#, c-format
+msgid "hotkey %s registered but unverified: %s"
+msgstr "ホットキー %s は登録されましたが未検証です：%s"
+
+#, c-format
+msgid "hotkey %s unavailable: %s"
+msgstr "ホットキー %s は使用できません：%s"
+
+#, c-format
+msgid "fired %d time(s) in %ds"
+msgstr "%d 秒間に %d 回発火しました"
+
+#. From cli/src/main.rs - shell extension status
+msgid "gnome extension not on the session bus (install it, log out and back in, then `gnome-extensions enable sizer@sizerlinux.dev`)"
+msgstr "GNOME 拡張がセッションバスにありません（インストールし、ログアウトして再ログインし、`gnome-extensions enable sizer@sizerlinux.dev` を実行してください）"
+
+#, c-format
+msgid "gnome extension running (%d presets, menu %s)"
+msgstr "GNOME 拡張実行中（%d 個のプリセット、メニュー %s）"
+
+msgid "open"
+msgstr "開く"
+
+msgid "closed"
+msgstr "閉じる"
+
+#. From cli/src/main.rs - doctor command
+msgid "session"
+msgstr "セッション"
+
+msgid "config"
+msgstr "設定"
+
+msgid "shell"
+msgstr "シェル"
+
+msgid "backend"
+msgstr "バックエンド"
+
+msgid "caps"
+msgstr "機能"
+
+msgid "monitors"
+msgstr "モニター"
+
+#, c-format
+msgid "session %s"
+msgstr "セッション %s"
+
+#, c-format
+msgid "config %s"
+msgstr "設定 %s"
+
+#, c-format
+msgid "shell %s"
+msgstr "シェル %s"
+
+#, c-format
+msgid "backend %s (%s)"
+msgstr "バックエンド %s（%s）"
+
+#, c-format
+msgid "monitors %d"
+msgstr "モニター %d"
+
+#, c-format
+msgid "  [%d] %s"
+msgstr "  [%d] %s"
+
+#, c-format
+msgid "workarea %dx%d at %d,%d"
+msgstr "ワークエリア %dx%d at %d,%d"
+
+msgid "active"
+msgstr "アクティブ"
+
+msgid "active   none"
+msgstr "アクティブ なし"
+
+#, c-format
+msgid "active   %s"
+msgstr "アクティブ %s"
+
+#. From cli/src/main.rs - window output
+#, c-format
+msgid "window %s above = %s"
+msgstr "ウィンドウ %s 最前面 = %s"
+
+#, c-format
+msgid "window %s maximized = %s"
+msgstr "ウィンドウ %s 最大化 = %s"
+
+#. From daemon.rs - daemon messages
+#, c-format
+msgid "no configuration file at %s; using built-in presets"
+msgstr "%s に設定ファイルがありません；ビルトインプリセットを使用します"
+
+#, c-format
+msgid "watching %s"
+msgstr "%s を監視中"
+
+#, c-format
+msgid "%s disappeared; using built-in presets"
+msgstr "%s が消失しました；ビルトインプリセットを使用します"
+
+#, c-format
+msgid "configuration changed; pushing new presets"
+msgstr "設定が変更されました；新しいプリセットをプッシュしています"
+
+#, c-format
+msgid "%s: %s; keeping the last good presets"
+msgstr "%s：%s；最後の有効なプリセットを保持します"
+
+msgid "shell extension is back"
+msgstr "シェル拡張が復旧しました"
+
+#, c-format
+msgid "pushed %d of %d presets from %s"
+msgstr "%1$d/%2$d 個のプリセットを %3$s からプッシュしました"
+
+msgid "built-in presets"
+msgstr "ビルトインプリセット"
+
+#, c-format
+msgid "the shell extension rejected the preset list (%s); its menu keeps the previous presets"
+msgstr "シェル拡張がプリセットリスト（%s）を拒否しました；そのメニューは前回のプリセットを保持します"
+
+#, c-format
+msgid "cannot read the SetPresets reply (%s): %s"
+msgstr "SetPresets の応答を読み取れません（%s）：%s"
+
+#, c-format
+msgid "SetPresets failed: %s"
+msgstr "SetPresets 失敗：%s"
+
+#, c-format
+msgid "waiting for the GNOME shell extension (%s): %s"
+msgstr "GNOME シェル拡張を待機中（%s）：%s"
+
+#, c-format
+msgid "the shell extension skipped %s: %s"
+msgstr "シェル拡張が %s をスキップしました：%s"
+
+msgid "<unnamed>"
+msgstr "<無名>"
+
+msgid "invalid preset"
+msgstr "無効なプリセット"
+
+#. From daemon.rs - hotkey warnings
+#, c-format
+msgid "options.hotkey: %s; the GNOME extension keeps its current keybinding"
+msgstr "options.hotkey：%s；GNOME 拡張は現在のキーバインドを保持します"
+
+#, c-format
+msgid "cannot connect to the session bus: %s"
+msgstr "セッションバスに接続できません：%s"
+
+#. From config/src/lib.rs - validation messages
+#, c-format
+msgid "unsupported version %d, expected %d"
+msgstr "サポートされていないバージョン %d、期待値は %d"
+
+msgid "a separator must not carry a label, size, anchor, position, hotkey or monitor"
+msgstr "セパレータにはラベル、サイズ、アンカー、位置、ホットキー、モニターを設定できません"
+
+msgid "label must not be empty"
+msgstr "ラベルは空にできません"
+
+#, c-format
+msgid "duplicate label %s in the same group"
+msgstr "同じグループに重複したラベル %s があります"
+
+msgid "hotkey must not be empty"
+msgstr "ホットキーは空にできません"
+
+msgid "x and y must be set together"
+msgstr "x と y は同時に設定する必要があります"
+
+msgid "anchor and x/y are mutually exclusive"
+msgstr "anchor と x/y は互いに排他的です"
+
+#. From extension.js - preset problem descriptions
+msgid "not an object"
+msgstr "オブジェクトではありません"
+
+msgid "size must look like 1024x768 or 50%x50%"
+msgstr "サイズは 1024x768 または 50%x50% の形式でなければなりません"
+
+#, c-format
+msgid "unknown anchor %s"
+msgstr "不明なアンカー %s"
+
+msgid "x and y must be integers set together"
+msgstr "x と y は整数で同時に設定する必要があります"
+
+#, c-format
+msgid "unknown monitor %s"
+msgstr "不明なモニター %s"
+
+#. From extension.js - preset result errors
+msgid "no_target_window"
+msgstr "ターゲットウィンドウなし"
+
+msgid "no_such_monitor"
+msgstr "そのようなモニターなし"
+
+msgid "no_work_area"
+msgstr "ワークエリアなし"
+
+msgid "no_presets"
+msgstr "プリセットなし"
+
+msgid "menu_closed"
+msgstr "メニューが閉じられました"
+
+msgid "no_such_row"
+msgstr "そのような行なし"
+
+msgid "window destroyed"
+msgstr "ウィンドウが破棄されました"
+
+msgid "superseded"
+msgstr "置き換えられました"
+
+msgid "unmaximize_timeout"
+msgstr "最大化解除タイムアウト"

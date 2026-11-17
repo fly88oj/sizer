@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Sizer Settings
+Comment=Edit the Sizer window size presets
+Exec=sizer config edit
+Icon=sizer
+Terminal=false
+StartupNotify=true
+Categories=Utility;Settings;
+Keywords=window;resize;size;preset;configure;

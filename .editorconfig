@@ -1,0 +1,54 @@
+# EditorConfig — keeps indentation consistent across contributors
+# https://editorconfig.org
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+[*.rs]
+# rustfmt enforces its own rules; just prevent tabs
+indent_style = space
+indent_size = 4
+
+[*.toml]
+indent_style = space
+indent_size = 4
+
+[*.js]
+indent_style = space
+indent_size = 2
+
+[*.py]
+indent_style = space
+indent_size = 4
+
+[*.json]
+indent_style = space
+indent_size = 2
+
+[*.desktop]
+indent_style = space
+indent_size = 2
+
+[*.sh]
+indent_style = space
+indent_size = 4
+
+[Makefile]
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = false
+
+[*.po]
+indent_style = space
+indent_size = 4
+
+[*.svg]
+indent_style = space
+indent_size = 2

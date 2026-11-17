@@ -1,0 +1,13 @@
+[package]
+name = "sizer-popup"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+sizer-config = { workspace = true }
+sizer-core = { workspace = true }
+sizer-platform = { workspace = true }
+x11rb = { workspace = true }
+x11-dl = { workspace = true }

@@ -1,0 +1,10 @@
+[package]
+name = "sizer-platform"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+sizer-core.workspace = true
+serde.workspace = true

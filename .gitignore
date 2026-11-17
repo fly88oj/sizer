@@ -1,0 +1,27 @@
+# Rust build output
+target/
+**/target/
+
+# Python bytecode caches
+__pycache__/
+*.pyc
+
+# Flatpak build cache
+.flatpak-builder/
+
+# End-to-end run logs, private session dirs and results
+tests/e2e/artifacts/
+tests/e2e/vm/__pycache__/
+
+# Local worktrees and planning
+.local/
+.planning/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

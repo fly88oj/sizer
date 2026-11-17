@@ -1,0 +1,466 @@
+# Sizer - Window Sizing Utility
+# Copyright (C) 2026 Jowency
+# This file is distributed under the MIT license.
+#
+# This file contains all user-facing strings extracted from the Sizer source
+# code. Translators should create .po files under locale/<LANG>/LC_MESSAGES/.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Sizer 0.1.0\n"
+"POT-Creation-Date: 2026-11-17 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. From sizer.desktop
+#. From tray/src/lib.rs - tray title
+msgid "Sizer"
+msgstr ""
+
+#. From sizer.desktop
+msgid "Choose a window size preset at the pointer"
+msgstr ""
+
+#. From tray/src/lib.rs - empty menu state
+msgid "No presets configured"
+msgstr ""
+
+#. From tray/src/lib.rs - no active window label
+msgid "no active window"
+msgstr ""
+
+#. From popup/src/lib.rs - overflow submenu label
+#, c-format
+msgid "... %d more"
+msgstr ""
+
+#. From popup/src/lib.rs - no preset entries error
+msgid "the preset menu has no entries"
+msgstr ""
+
+#. From popup/src/lib.rs - X display error
+#, c-format
+msgid "cannot open X display: %s"
+msgstr ""
+
+#. From popup/src/lib.rs - pointer grab held by another client
+#, c-format
+msgid "another client holds the pointer (grab status %s after %d attempts); GNOME holds the devices itself, use the shell extension menu there"
+msgstr ""
+
+#. From popup/src/lib.rs - keyboard grab held by another client
+#, c-format
+msgid "another client holds the keyboard (grab status %s after %d attempts); GNOME keeps the devices grabbed for the whole session, use the shell extension menu there"
+msgstr ""
+
+#. From popup/src/lib.rs - menu window never mapped
+msgid "the menu window was never mapped"
+msgstr ""
+
+#. From cli/src/main.rs - window list empty
+msgid "no controllable windows"
+msgstr ""
+
+#. From cli/src/main.rs - header for window list table
+msgid "ID"
+msgstr ""
+
+msgid "APP"
+msgstr ""
+
+msgid "SIZE"
+msgstr ""
+
+msgid "POSITION"
+msgstr ""
+
+msgid "TITLE"
+msgstr ""
+
+#. From cli/src/main.rs - basis labels for geometry output
+msgid "frame"
+msgstr ""
+
+msgid "client"
+msgstr ""
+
+#. From cli/src/main.rs - extents labels
+msgid "extents"
+msgstr ""
+
+msgid "left"
+msgstr ""
+
+msgid "top"
+msgstr ""
+
+msgid "right"
+msgstr ""
+
+msgid "bottom"
+msgstr ""
+
+msgid "decorated"
+msgstr ""
+
+msgid "undecorated"
+msgstr ""
+
+msgid "selected"
+msgstr ""
+
+#. From cli/src/main.rs - resize errors
+msgid "resize needs exactly one of --size or --percent"
+msgstr ""
+
+#. From cli/src/main.rs - move errors
+msgid "move needs --anchor or --x/--y"
+msgstr ""
+
+#. From cli/src/main.rs - anchor/position conflicts
+msgid "--anchor and --x/--y are mutually exclusive"
+msgstr ""
+
+msgid "--x needs --y as well"
+msgstr ""
+
+msgid "--y needs --x as well"
+msgstr ""
+
+#. From cli/src/main.rs - preset operations
+#, c-format
+msgid "preset %s already exists in %s; use `sizer preset set` to change it"
+msgstr ""
+
+msgid "--position is 1-based and must be at least 1"
+msgstr ""
+
+#, c-format
+msgid "--position %d is out of range: %s holds %d preset(s)"
+msgstr ""
+
+msgid "preset label must not be empty"
+msgstr ""
+
+#, c-format
+msgid "row #%d is a menu separator; %s it makes no sense — remove it instead"
+msgstr ""
+
+#. From cli/src/main.rs - report_preset actions
+msgid "added"
+msgstr ""
+
+msgid "updated"
+msgstr ""
+
+msgid "removed"
+msgstr ""
+
+msgid "moved"
+msgstr ""
+
+msgid "copied"
+msgstr ""
+
+msgid "separator"
+msgstr ""
+
+#, c-format
+msgid "%s separator in %s"
+msgstr ""
+
+#, c-format
+msgid "%s %s (%s) in %s"
+msgstr ""
+
+#. From cli/src/main.rs - preset list headers
+msgid "IDX | GROUP | LABEL | SIZE | ANCHOR | HOTKEY"
+msgstr ""
+
+msgid "<separator>"
+msgstr ""
+
+#. From cli/src/main.rs - copy label suffix
+#, c-format
+msgid "%s copy"
+msgstr ""
+
+#, c-format
+msgid "%s copy %d"
+msgstr ""
+
+#. From cli/src/main.rs - saved preset report
+#, c-format
+msgid "saved %s from window %s as %s in %s"
+msgstr ""
+
+#. From cli/src/main.rs - describe_group
+msgid "the top level"
+msgstr ""
+
+#, c-format
+msgid "group %s"
+msgstr ""
+
+#. From cli/src/main.rs - daemon mode
+msgid "daemon writes plain logs, not JSON; drop --json"
+msgstr ""
+
+msgid "no macro given and standard input is empty"
+msgstr ""
+
+#. From cli/src/main.rs - config status
+msgid "cannot locate a configuration file (use --config, XDG_CONFIG_HOME or HOME)"
+msgstr ""
+
+#, c-format
+msgid "%s (missing; built-in presets apply)"
+msgstr ""
+
+msgid "configuration is invalid"
+msgstr ""
+
+#, c-format
+msgid "%s (invalid: %s; run `sizer config check`)"
+msgstr ""
+
+#, c-format
+msgid "%s (%d preset%s)"
+msgstr ""
+
+#. From cli/src/main.rs - hotkey output
+msgid "hotkey %s registered and delivery verified"
+msgstr ""
+
+#, c-format
+msgid "hotkey %s registered but unverified: %s"
+msgstr ""
+
+#, c-format
+msgid "hotkey %s unavailable: %s"
+msgstr ""
+
+#, c-format
+msgid "fired %d time(s) in %ds"
+msgstr ""
+
+#. From cli/src/main.rs - shell extension status
+msgid "gnome extension not on the session bus (install it, log out and back in, then `gnome-extensions enable sizer@sizerlinux.dev`)"
+msgstr ""
+
+#, c-format
+msgid "gnome extension running (%d presets, menu %s)"
+msgstr ""
+
+msgid "open"
+msgstr ""
+
+msgid "closed"
+msgstr ""
+
+#. From cli/src/main.rs - doctor command
+msgid "session"
+msgstr ""
+
+msgid "config"
+msgstr ""
+
+msgid "shell"
+msgstr ""
+
+msgid "backend"
+msgstr ""
+
+msgid "caps"
+msgstr ""
+
+msgid "monitors"
+msgstr ""
+
+#, c-format
+msgid "session %s"
+msgstr ""
+
+#, c-format
+msgid "config %s"
+msgstr ""
+
+#, c-format
+msgid "shell %s"
+msgstr ""
+
+#, c-format
+msgid "backend %s (%s)"
+msgstr ""
+
+#, c-format
+msgid "monitors %d"
+msgstr ""
+
+#, c-format
+msgid "  [%d] %s"
+msgstr ""
+
+#, c-format
+msgid "workarea %dx%d at %d,%d"
+msgstr ""
+
+msgid "active"
+msgstr ""
+
+msgid "active   none"
+msgstr ""
+
+#, c-format
+msgid "active   %s"
+msgstr ""
+
+#. From cli/src/main.rs - window output
+#, c-format
+msgid "window %s above = %s"
+msgstr ""
+
+#, c-format
+msgid "window %s maximized = %s"
+msgstr ""
+
+#. From daemon.rs - daemon messages
+#, c-format
+msgid "no configuration file at %s; using built-in presets"
+msgstr ""
+
+#, c-format
+msgid "watching %s"
+msgstr ""
+
+#, c-format
+msgid "%s disappeared; using built-in presets"
+msgstr ""
+
+#, c-format
+msgid "configuration changed; pushing new presets"
+msgstr ""
+
+#, c-format
+msgid "%s: %s; keeping the last good presets"
+msgstr ""
+
+msgid "shell extension is back"
+msgstr ""
+
+#, c-format
+msgid "pushed %d of %d presets from %s"
+msgstr ""
+
+msgid "built-in presets"
+msgstr ""
+
+#, c-format
+msgid "the shell extension rejected the preset list (%s); its menu keeps the previous presets"
+msgstr ""
+
+#, c-format
+msgid "cannot read the SetPresets reply (%s): %s"
+msgstr ""
+
+#, c-format
+msgid "SetPresets failed: %s"
+msgstr ""
+
+#, c-format
+msgid "waiting for the GNOME shell extension (%s): %s"
+msgstr ""
+
+#, c-format
+msgid "the shell extension skipped %s: %s"
+msgstr ""
+
+msgid "<unnamed>"
+msgstr ""
+
+msgid "invalid preset"
+msgstr ""
+
+#. From daemon.rs - hotkey warnings
+#, c-format
+msgid "options.hotkey: %s; the GNOME extension keeps its current keybinding"
+msgstr ""
+
+#, c-format
+msgid "cannot connect to the session bus: %s"
+msgstr ""
+
+#. From config/src/lib.rs - validation messages
+#, c-format
+msgid "unsupported version %d, expected %d"
+msgstr ""
+
+msgid "a separator must not carry a label, size, anchor, position, hotkey or monitor"
+msgstr ""
+
+msgid "label must not be empty"
+msgstr ""
+
+#, c-format
+msgid "duplicate label %s in the same group"
+msgstr ""
+
+msgid "hotkey must not be empty"
+msgstr ""
+
+msgid "x and y must be set together"
+msgstr ""
+
+msgid "anchor and x/y are mutually exclusive"
+msgstr ""
+
+#. From extension.js - preset problem descriptions
+msgid "not an object"
+msgstr ""
+
+msgid "size must look like 1024x768 or 50%x50%"
+msgstr ""
+
+#, c-format
+msgid "unknown anchor %s"
+msgstr ""
+
+msgid "x and y must be integers set together"
+msgstr ""
+
+#, c-format
+msgid "unknown monitor %s"
+msgstr ""
+
+#. From extension.js - preset result errors
+msgid "no_target_window"
+msgstr ""
+
+msgid "no_such_monitor"
+msgstr ""
+
+msgid "no_work_area"
+msgstr ""
+
+msgid "no_presets"
+msgstr ""
+
+msgid "menu_closed"
+msgstr ""
+
+msgid "no_such_row"
+msgstr ""
+
+msgid "window destroyed"
+msgstr ""
+
+msgid "superseded"
+msgstr ""
+
+msgid "unmaximize_timeout"
+msgstr ""

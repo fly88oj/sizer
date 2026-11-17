@@ -1,0 +1,38 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/core",
+    "crates/config",
+    "crates/platform",
+    "crates/backend-x11",
+    "crates/tray",
+    "crates/popup",
+    "crates/cli",
+    "crates/macro",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT"
+
+[workspace.dependencies]
+sizer-core = { path = "crates/core" }
+sizer-config = { path = "crates/config" }
+sizer-platform = { path = "crates/platform" }
+sizer-backend-x11 = { path = "crates/backend-x11" }
+sizer-tray = { path = "crates/tray" }
+sizer-popup = { path = "crates/popup" }
+sizer-macro = { path = "crates/macro" }
+x11rb = { version = "0.13", features = ["xtest", "randr"] }
+x11-dl = "2.21"
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+quick-xml = "0.41"
+zbus = { version = "5", features = ["blocking-api"] }
+# Base API plus GTK 4.6 widgets; the system library is 4.14 on the build host.
+gtk4 = { version = "0.10", features = ["v4_6"] }
+gettext = "0.4"

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Sizer
+Comment=Choose a window size preset at the pointer
+Exec=sizer menu
+Icon=sizer
+Terminal=false
+StartupNotify=false
+Categories=Utility;
+Keywords=window;resize;size;preset;
